@@ -1,0 +1,286 @@
+/*  *{
+    border: solid;
+} */
+.menu-btn {
+    z-index:9999;
+    position: fixed;
+    padding:10px;
+    font-size: 24px;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    background: lightblue;
+    opacity: 0;
+}
+
+.close-menu {
+    position: fixed;
+    margin: 1em;
+    font-size: 24px;
+    color: #fff;
+    z-index: 1;
+}
+
+.nav {
+    position: absolute;
+    left: 21%;
+    margin-top: 20%;
+}
+
+.nav ul {
+    list-style: none;
+}
+
+.main-menu-item {
+    padding-top: 30px;
+}
+
+.main-menu-item a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: lighter;
+}
+
+.submenu-item a {
+    z-index: 10;
+    color: grey;
+}
+
+.submenu li {
+    margin: 20px 0;
+}
+
+a ion-icon {
+    position: relative;
+    font-size: 9px;
+    opacity: 0.4;
+}
+
+.submenu {
+    display:none;
+}
+
+.contact {
+    color: #fff;
+    position: absolute;
+    bottom: 90px;
+    right: 24%;
+}
+
+.contact p {
+    font-weight: lighter;
+    color: grey;
+}
+
+
+body {
+      margin: 0;
+      background: #343233;
+}
+.container {
+      max-width: 1200px;
+      text-align: center;
+      margin: 0 auto;
+      padding: 0 3rem;
+}
+/* fixed navigation */
+
+.upmenu {
+      height: 50px;
+      width: 100%;
+      background-color: lightblue;
+      position: fixed;
+}
+
+.upmenu ul {
+      padding: 0;
+      margin: 0;
+      margin-left:60px;
+}
+
+.upmenu li {
+      display: inline;
+      float: right;
+}
+
+.upmenu a {
+      display: inline-block;
+      width: 100px;
+      font-weight: 400;
+      text-align: center;
+      text-decoration: none;
+      padding: 10px 0;
+      color: white;
+      transition: 1s;
+}
+
+.upmenu a:hover {
+      color: #6C6C6C;
+}
+/*main page*/
+.home {
+      width: 100%;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      overflow-y: hidden;
+}
+
+.home .container {
+      margin-top: 34vh;
+}
+/*About page*/
+/* 1st */
+#about {
+      width:100%;
+      height:100vh;
+      background: #282623;
+      padding: 8rem 0;
+      overflow-y: hidden;
+}
+#about .container{
+      margin-top: 34vh;
+}
+/* 2nd */
+#map {
+      width:100%;
+      height:100vh;
+      background: pink;
+      padding: 8rem 0;
+}
+/* 3rd */
+
+#attractions {
+      width:100%;
+      height:100vh;
+      background: aliceblue;
+      padding: 8em 0;
+}
+
+/*Rooms page*/
+/*1st*/
+#room2 {
+      width:100%;
+      height:100vh;
+      background: pink;
+      padding: 8rem 0;
+}
+#room1 .container{
+      margin-top: 34vh;
+}
+/* 2nd */
+#room2 {
+      width:100%;
+      height:100vh;
+      background: pink;
+      padding: 8rem 0;
+}
+/* 3rd */
+
+#room3 {
+      width:100%;
+      height:100vh;
+      background: aliceblue;
+      padding: 8em 0;
+}
+/* 4th */
+
+#room4 {
+      width:100%;
+      height:100vh;
+      background: violet;
+      padding: 8em 0;
+}
+/*Facilities page*/
+/* 1st */
+#gym {
+      width:100%;
+      height:100vh;
+      background: #282623;
+      padding: 8rem 0;
+      overflow-y: hidden;
+}
+#gym .container{
+      margin-top: 34vh;
+}
+/* 2nd */
+#pool {
+      width:100%;
+      height:100vh;
+      background: pink;
+      padding: 8rem 0;
+}
+/* 3rd */
+
+#cu {
+      width:100%;
+      height:100vh;
+      background: aliceblue;
+      padding: 8em 0;
+}
+/* 4th */
+
+#laundry {
+      width:100%;
+      height:100vh;
+      background: violet;
+      padding: 8em 0;
+}
+/*FaD page*/
+/* 1st */
+#restaurant {
+      width:100%;
+      height:100vh;
+      background: #282623;
+      padding: 8rem 0;
+      overflow-y: hidden;
+}
+#restaurant .container{
+      margin-top: 34vh;
+}
+/* 2nd */
+#bar {
+      width:100%;
+      height:100vh;
+      background: pink;
+      padding: 8rem 0;
+}
+/* 3rd */
+
+#cafe {
+      width:100%;
+      height:100vh;
+      background: aliceblue;
+      padding: 8em 0;
+}
+/* 4th */
+
+#roomservice {
+      width:100%;
+      height:100vh;
+      background: violet;
+      padding: 8em 0;
+}
+/*contact us page*/
+/* 1st */
+#contact {
+      width:100%;
+      height:100vh;
+      background: #282623;
+      padding: 8rem 0;
+      overflow-y: hidden;
+}
+#contact .container{
+      margin-top: 34vh;
+}
+/* 2nd */
+#recruit {
+      width:100%;
+      height:100vh;
+      background: pink;
+      padding: 8rem 0;
+}

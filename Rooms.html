@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JHotel</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <!--ionicon-->
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <!--sidemenubar-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+    <!--html call-->
+</head>
+<body>   
+<nav>
+        <div>
+              <div class="menu-btn">
+                    <ion-icon name="menu"></ion-icon>
+              </div>
+              <div class="menu">
+                    <div class="close-menu">
+                          <ion-icon name="menu"></ion-icon>
+                    </div>
+                    <div class="nav">
+                          <ul class="main-menu">
+                                <li class="main-menu-item">
+                                      <a href="#">About<ion-icon name="add"></ion-icon></a>
+                                      <ul class="submenu">
+                                            <li class="submenu-item">
+                                                  <a href="About.html#about">About</a>
+                                            </li>
+                                            <li class="submenu-item">
+                                                  <a href="About.html#map">Map</a>
+                                            </li>
+                                            <li class="submenu-item">
+                                                  <a href="About.html#attractions">Attractions</a>
+                                            </li>
+                                      </ul> 
+                                </li>
+                                <li class="main-menu-item">
+                                      <a href="#">Rooms<ion-icon name="add"></ion-icon></a>
+                                      <ul class="submenu">
+                                            <li class="submenu-item">
+                                                  <a href="Rooms.html#room1">Room1</a>
+                                            </li>
+                                            <li class="submenu-item">
+                                                  <a href="Rooms.html#room2">Room2</a>
+                                            </li>
+                                            <li class="submenu-item">
+                                                  <a href="Rooms.html#room3">Room3</a>
+                                            </li>
+                                            <li class="submenu-item">
+                                                  <a href="Rooms.html#room4">Room4</a>
+                                            </li>
+                                      </ul> 
+                                </li>
+                                <li class="main-menu-item">
+                                      <a href="#">Food&Drink<ion-icon name="add"></ion-icon></a>
+                                      <ul class="submenu">
+                                            <li class="submenu-item">
+                                                  <a href="FaD.html#restaurant">Restaurant</a>
+                                            </li>
+                                            <li class="submenu-item">
+                                                  <a href="FaD.html#bar">Bar</a>
+                                            </li>
+                                            <li class="submenu-item">
+                                                  <a href="FaD.html#cafe">Cafe</a>
+                                            </li>
+                                            <li class="submenu-item">
+                                                  <a href="FaD.html#roomservice">Room Service</a>
+                                            </li>
+                                      </ul> 
+                                </li>
+                                <li class="main-menu-item">
+                                      <a href="#">Facilities<ion-icon name="add"></ion-icon></a>
+                                      <ul class="submenu">
+                                            <li class="submenu-item">
+                                                  <a href="Facilities.html#gym">Gym</a>
+                                            </li>
+                                            <li class="submenu-item">
+                                                  <a href="Facilities.html#pool">Swimming Pool</a>
+                                            </li>
+                                            <li class="submenu-item">
+                                                  <a href="Facilities.html#cu">CU</a>
+                                            </li>
+                                            <li class="submenu-item">
+                                                  <a href="Facilities.html#laundry">Laundry Room</a>
+                                            </li>
+                                      </ul> 
+                                </li>
+                                <li class="main-menu-item">
+                                      <a href="#">Contact Us<ion-icon name="add"></ion-icon></a>
+                                      <ul class="submenu">
+                                            <li class="submenu-item">
+                                                  <a href="Contactus.html#contact">Contact us</a>
+                                            </li>
+                                            <li class="submenu-item">
+                                                  <a href="Contactus.html#recruit">Recruit</a>
+                                            </li>
+                                      </ul> 
+                                </li>
+                          </ul>
+                    </div>
+  
+                    <div class="contact">
+                          <p class="call"><ion-icon name="call"></ion-icon>&nbsp;&nbsp;&nbsp;+81 010 4910 3833</p>
+                          <p class="mail"><ion-icon name="mail"></ion-icon>&nbsp;&nbsp;&nbsp;junseak11051@gmail.com</p>
+                    </div>
+              </div>
+        </div>
+        </nav>
+        <script type="text/javascript">
+            $('ul.main-menu li').click(function (e) {
+    
+                if ($().siblings('li').find('ul.submenu:visible').length) {
+                    $('ul.submenu').slideUp('normal');
+                }
+                $(this).find('ul.submenu').slideToggle('normal');
+            });
+    
+            var t1 = new TimelineMax({ paused: true });     /*전환 시간 설정*/
+    
+            t1.to(".menu", 0.2, {
+                opacity: 0.9
+            });
+    
+            t1.staggerFrom(".main-menu li a:not(.submenu li a)", 1, {         /*메인메뉴 활성화*/
+                opacity: 0,
+                y: 10,
+                ease: Power3.easeInOut
+            }, 0.1);
+    
+            t1.from(".submenu", 0.1, {                                        /*서브메뉴 활성화*/
+                autoAlpha: 0
+            });
+    
+            t1.from(".call", 0.1, {                                             /*전화번호 활성화*/
+                delay: -1,
+                opacity: 0,
+                y: 10,
+                ease: Power3.easeInOut
+            });
+    
+            t1.from(".mail", 0.1, {                                             /*이메일 활성화*/
+                delay: -1,
+                opacity: 0,
+                y: 10,
+                ease: Power3.easeInOut
+            });
+    
+            t1.reverse();
+    
+            $(document).on("click", ".menu-btn", function () {                  /*클릭시 t1 함수 활성화*/
+                t1.reversed(!t1.reversed());
+            });
+    
+            $(".close-menu").click(function () {                /*클릭시 t1 함수 역으로 활성화*/
+                t1.reversed(!t1.reversed());
+            });
+    
+    
+        </script>   
+  <header>
+            <div class="upmenu">
+                  <ul>
+                        <li>
+                              <a href="sitemap.html">Sitemap</a>
+                        </li>
+                        <li>
+                              <a href="register.html">Register</a>
+                        </li>
+                        <li>
+                              <a href="login.html">Login</a>
+                        </li>
+                  </ul>
+            </div>
+  </header>
+      <!-- 1st -->
+      <a name="room1"></a>
+      <div id="room1" class="section">
+            <div class="container">
+                  <h1>Room1</h1>
+            </div>
+      </div>
+      <!-- 2nd -->
+
+      <a name="room2"></a>
+      <div id="room2" class="section">
+            <div class="container">
+                  <h1>Room2</h1>
+            </div>
+      </div>
+
+      <!-- 3nd -->
+      <a name="room3"></a>
+      <div id="room3" class="section">
+            <div class="container">
+                  <h1>Room3</h1>
+            </div>
+      </div>
+
+      <!-- 4th -->
+
+      <a name="room4"></a>
+      <div id="room4" class="section">
+            <div class="container">
+                  <h1>Room4</h1>
+            </div>
+      </div>
+
+      <script src="js/script.js"></script>
+</body>
+</html>
