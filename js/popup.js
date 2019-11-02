@@ -1,0 +1,13 @@
+$(".popup").click(function(e){
+	e.preventDefault();
+	$(".layer").fadeIn();
+	/*
+	$(".layer").css("display","block");
+	$(".layer").show();
+	$(".layer").slideDown();
+	*/
+});
+$(".close").click(function(e){
+	e.preventDefault();
+	$(".layer").fadeOut();
+});

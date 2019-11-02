@@ -1,28 +1,46 @@
-/*  *{
-    border: solid;
-} */
+/**{
+    border:1px solid;
+}*/
+html,body {
+      margin: 0;
+      background: #282623;
+      overflow:hidden;
+}
+
+#logo{
+  display:inline-block;
+  float:left;
+  position:fixed;
+  left:50%;
+  transform:translateX(-100%);
+}
+
 .menu-btn {
     z-index:9999;
     position: fixed;
-    padding:10px;
+    padding:20px;
     font-size: 24px;
 }
 
 .menu {
+  z-index: 99999;
+    display:block;
     position: fixed;
     top: 0;
     width: 300px;
     height: 100vh;
-    background: lightblue;
+    background: #402640;
     opacity: 0;
-}
+    box-shadow: 1px 1px 10px;
+  }
 
 .close-menu {
     position: fixed;
-    margin: 1em;
+    margin:0.82em;
     font-size: 24px;
     color: #fff;
     z-index: 1;
+    background: #402640;
 }
 
 .nav {
@@ -54,7 +72,7 @@
     margin: 20px 0;
 }
 
-a ion-icon {
+.main-menu-item a ion-icon {
     position: relative;
     font-size: 9px;
     opacity: 0.4;
@@ -73,27 +91,30 @@ a ion-icon {
 
 .contact p {
     font-weight: lighter;
-    color: grey;
+    color: white;
+    opacity:0.7;
 }
 
 
-body {
-      margin: 0;
-      background: #343233;
-}
 .container {
       max-width: 1200px;
       text-align: center;
       margin: 0 auto;
       padding: 0 3rem;
+      margin-top:34vh;
+      height:50vh;
 }
 /* fixed navigation */
 
 .upmenu {
-      height: 50px;
+      z-index: 9999;
+      height: 60px;
       width: 100%;
-      background-color: lightblue;
+      display:block;
+      background-color: transparent;
       position: fixed;
+      min-width:800px;
+      
 }
 
 .upmenu ul {
@@ -113,7 +134,7 @@ body {
       font-weight: 400;
       text-align: center;
       text-decoration: none;
-      padding: 10px 0;
+      padding: 20px 0;
       color: white;
       transition: 1s;
 }
@@ -121,6 +142,9 @@ body {
 .upmenu a:hover {
       color: #6C6C6C;
 }
+
+
+/*Containers*/
 /*main page*/
 .home {
       width: 100%;
@@ -130,9 +154,6 @@ body {
       overflow-y: hidden;
 }
 
-.home .container {
-      margin-top: 34vh;
-}
 /*About page*/
 /* 1st */
 #about {
@@ -142,41 +163,48 @@ body {
       padding: 8rem 0;
       overflow-y: hidden;
 }
-#about .container{
-      margin-top: 34vh;
-}
+
 /* 2nd */
 #map {
       width:100%;
       height:100vh;
-      background: pink;
+      background: #282623;
       padding: 8rem 0;
+}
+#map iframe{
+  border:none;
+  top:30vh;
+  width:50%;
+  min-width: 500px;
+  height:320px;
+  overflow:hidden;
+  position:fixed; 
+  left:50%;
+  transform:translateX(-50%);
 }
 /* 3rd */
 
 #attractions {
       width:100%;
       height:100vh;
-      background: aliceblue;
+      background: #282623;
       padding: 8em 0;
 }
 
 /*Rooms page*/
 /*1st*/
-#room2 {
+#room1 {
       width:100%;
       height:100vh;
-      background: pink;
+      background: #282623;
       padding: 8rem 0;
 }
-#room1 .container{
-      margin-top: 34vh;
-}
+
 /* 2nd */
 #room2 {
       width:100%;
       height:100vh;
-      background: pink;
+      background: #282623;
       padding: 8rem 0;
 }
 /* 3rd */
@@ -184,7 +212,7 @@ body {
 #room3 {
       width:100%;
       height:100vh;
-      background: aliceblue;
+      background: #282623;
       padding: 8em 0;
 }
 /* 4th */
@@ -192,7 +220,7 @@ body {
 #room4 {
       width:100%;
       height:100vh;
-      background: violet;
+      background: #282623;
       padding: 8em 0;
 }
 /*Facilities page*/
@@ -201,34 +229,28 @@ body {
       width:100%;
       height:100vh;
       background: #282623;
-      padding: 8rem 0;
       overflow-y: hidden;
 }
-#gym .container{
-      margin-top: 34vh;
-}
+
 /* 2nd */
 #pool {
       width:100%;
       height:100vh;
-      background: pink;
-      padding: 8rem 0;
+      background: #282623;
 }
 /* 3rd */
 
 #cu {
       width:100%;
       height:100vh;
-      background: aliceblue;
-      padding: 8em 0;
+      background: #282623;
 }
 /* 4th */
 
 #laundry {
       width:100%;
       height:100vh;
-      background: violet;
-      padding: 8em 0;
+      background: #282623;
 }
 /*FaD page*/
 /* 1st */
@@ -239,14 +261,12 @@ body {
       padding: 8rem 0;
       overflow-y: hidden;
 }
-#restaurant .container{
-      margin-top: 34vh;
-}
+
 /* 2nd */
 #bar {
       width:100%;
       height:100vh;
-      background: pink;
+      background: #282623;
       padding: 8rem 0;
 }
 /* 3rd */
@@ -254,7 +274,7 @@ body {
 #cafe {
       width:100%;
       height:100vh;
-      background: aliceblue;
+      background: #282623;
       padding: 8em 0;
 }
 /* 4th */
@@ -262,7 +282,7 @@ body {
 #roomservice {
       width:100%;
       height:100vh;
-      background: violet;
+      background: #282623;
       padding: 8em 0;
 }
 /*contact us page*/
@@ -274,13 +294,163 @@ body {
       padding: 8rem 0;
       overflow-y: hidden;
 }
-#contact .container{
-      margin-top: 34vh;
-}
+
 /* 2nd */
 #recruit {
       width:100%;
       height:100vh;
-      background: pink;
+      background: #282623;
       padding: 8rem 0;
+}
+
+
+
+
+/*slider*/
+
+#slider,
+.slide-content {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  overflow:hidden;
+  
+}
+#slider{
+  border-color:green;
+}
+
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-color:blue;
+}
+
+
+#arrow-left {
+  position:fixed;
+  z-index:999999;
+  width:50px;
+  height:50px;
+  top:50%;
+  transform:translateY(-50%);
+  opacity:0.8;
+  color:white;
+}
+
+#arrow-right {
+  position:fixed;
+  z-index:999999;
+  width:50px;
+  height:50px;
+  top:50%;
+  transform:translateY(-50%);
+  right:0;
+  opacity:0.8;
+  color:white;
+}
+
+/*hide scrollbar*/
+::-webkit-scrollbar{
+  width:20px;
+} 
+
+::-webkit-scrollbar-thumb{
+  background-color:rgba(0,0,0,1);
+}  
+
+
+/*layer*/
+
+.layer {
+  display:none;
+  z-index:99999;
+  position:fixed; 
+  overflow-y:scroll;
+  left:50%;
+  transform:translateX(-50%);
+  top:0px;
+  width:30%;
+  min-width:500px;
+  box-shadow:3px 3px 10px rgba(0,0,0,0,4);
+  background:black;
+  color:white;
+  opacity:0.95;
+  height:100vh;
+}
+.layer .close{
+  display:block;
+  position:fixed; 
+  right:20px;
+  top:20px;
+  padding:1px 6px;
+  width:30px;
+  height:30px;
+}
+
+#close-icon{
+  display:block;
+  width:30px;
+  height:30px;
+  color:white;
+}
+.popup{
+  color:white;
+  text-decoration: none;
+}
+
+/*Half-Half page*/
+.slide-content-half {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-color:yellow;
+  
+}
+
+.leftimg{
+  display:inline-block;
+  float:left;
+  width:50%;
+  height:100%;
+}
+.righttext{
+  float:left;
+  width:50%;
+  height:100%;
+  background:#282623;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.containerrecruit {
+      max-width: 1200px;
+      height:50%;
+      text-align: center;
+      margin: 0 auto;
+      padding: 0 3rem;
+}
+.recruitboxcenter{
+  width:100%;
+  height:100%;
+  margin-left:50%;
+  transform:translateX(-50%);
+}
+.recruitbox{
+  width:30%;
+  height:50%;
+  display:block;
+  margin-right: 3%;
+  margin-left: 13%;
+  margin-top:10%;
+  float:left;
+  background-color:red;
 }

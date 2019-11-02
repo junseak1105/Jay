@@ -16,7 +16,28 @@
 
     <!--html call-->
 </head>
-<body>   
+<body>
+  <ion-icon name="arrow-dropright"id="arrow-right"></ion-icon>
+  <ion-icon name="arrow-dropleft" id="arrow-left"></ion-icon>
+<header>
+            <div class="upmenu">
+                  <ul>
+                        
+                        <li>
+                              <a href="sitemap.html">Sitemap</a>
+                        </li>
+                        <li>
+                              <a href="register.html">Register</a>
+                        </li>
+                        <li>
+                              <a href="login.html">Login</a>
+                        </li>
+                        <div id="logo">
+                          <a href="index.html"><img src="img/logo.png" width="200" height="100"></a>
+                        </div>
+                  </ul>
+            </div>
+  </header>   
 <nav>
         <div>
               <div class="menu-btn">
@@ -113,106 +134,71 @@
                     </div>
               </div>
         </div>
-        </nav>
-        <script type="text/javascript">
-            $('ul.main-menu li').click(function (e) {
-    
-                if ($().siblings('li').find('ul.submenu:visible').length) {
-                    $('ul.submenu').slideUp('normal');
-                }
-                $(this).find('ul.submenu').slideToggle('normal');
-            });
-    
-            var t1 = new TimelineMax({ paused: true });     /*전환 시간 설정*/
-    
-            t1.to(".menu", 0.2, {
-                opacity: 0.9
-            });
-    
-            t1.staggerFrom(".main-menu li a:not(.submenu li a)", 1, {         /*메인메뉴 활성화*/
-                opacity: 0,
-                y: 10,
-                ease: Power3.easeInOut
-            }, 0.1);
-    
-            t1.from(".submenu", 0.1, {                                        /*서브메뉴 활성화*/
-                autoAlpha: 0
-            });
-    
-            t1.from(".call", 0.1, {                                             /*전화번호 활성화*/
-                delay: -1,
-                opacity: 0,
-                y: 10,
-                ease: Power3.easeInOut
-            });
-    
-            t1.from(".mail", 0.1, {                                             /*이메일 활성화*/
-                delay: -1,
-                opacity: 0,
-                y: 10,
-                ease: Power3.easeInOut
-            });
-    
-            t1.reverse();
-    
-            $(document).on("click", ".menu-btn", function () {                  /*클릭시 t1 함수 활성화*/
-                t1.reversed(!t1.reversed());
-            });
-    
-            $(".close-menu").click(function () {                /*클릭시 t1 함수 역으로 활성화*/
-                t1.reversed(!t1.reversed());
-            });
-    
-    
-        </script>   
-  <header>
-            <div class="upmenu">
-                  <ul>
-                        <li>
-                              <a href="sitemap.html">Sitemap</a>
-                        </li>
-                        <li>
-                              <a href="register.html">Register</a>
-                        </li>
-                        <li>
-                              <a href="login.html">Login</a>
-                        </li>
-                  </ul>
-            </div>
-  </header>
-      <!-- 1st -->
-      <a name="room1"></a>
+</nav>
+      <script src="js/sidemenu.js"></script>
+
+<div class ="wrap">
+  
+  <div id="slider">
+    <div class="slide">
+      <div class="slide-content">
+        <a name="room1"></a>
       <div id="room1" class="section">
             <div class="container">
-                  <h1>Room1</h1>
+              <div class="layer">
+                <a href="#" class="close"><ion-icon name="close" id="close-icon"></ion-icon></a>
+                  contentcontent
+              </div>
+              <a href="#" class="popup"><h1>Room1</h1></a>
             </div>
       </div>
-      <!-- 2nd -->
-
-      <a name="room2"></a>
+      </div>
+    </div>
+    <div class="slide">
+      <div class="slide-content">
+        <a name="room2"></a>
       <div id="room2" class="section">
             <div class="container">
-                  <h1>Room2</h1>
+              <div class="layer">
+                <a href="#" class="close"><ion-icon name="close" id="close-icon"></ion-icon></a>
+                  contentcontent
+              </div>
+                  <a href="#" class="popup"><h1>Room2</h1></a>
             </div>
       </div>
-
-      <!-- 3nd -->
-      <a name="room3"></a>
+      </div>
+    </div>
+    <div class="slide">
+      <div class="slide-content">
+        <a name="room3"></a>
       <div id="room3" class="section">
+        <div class="layer">
+                <a href="#" class="close"><ion-icon name="close" id="close-icon"></ion-icon></a>
+                  contentcontent
+              </div>
             <div class="container">
-                  <h1>Room3</h1>
+                  <a href="#" class="popup"><h1>Room3</h1></a>
             </div>
       </div>
-
-      <!-- 4th -->
-
-      <a name="room4"></a>
+      </div>
+    </div>
+    <div class="slide">
+      <div class="slide-content">
+        <a name="room4"></a>
       <div id="room4" class="section">
             <div class="container">
-                  <h1>Room4</h1>
+              <div class="layer">
+                <a href="#" class="close"><ion-icon name="close" id="close-icon"></ion-icon></a>
+                  contentcontent
+              </div>
+                  <a href="#" class="popup"><h1>Room4</h1></a>
             </div>
       </div>
-
-      <script src="js/script.js"></script>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/slidescript.js"></script>
+ <script src="js/popup.js"></script>
 </body>
 </html>

@@ -8,27 +8,146 @@
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
     <!-- jquery -->
-    <script src="js/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <!--ionicon-->
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
     <!--sidemenubar-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
     <!--html call-->
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("#input").load("input.html")
-            // input 이름 바꾸기
-            // 파일 이름 지정
-        });
-    </script>
 </head>
-<body>   
-      <div id="input"></div>
-      <div class="home">
-            <div class="container">
-                  <p>contan1</p>
+<body>
+<header>
+            <div class="upmenu">
+                  <ul>
+                        
+                        <li>
+                              <a href="sitemap.html">Sitemap</a>
+                        </li>
+                        <li>
+                              <a href="register.html">Register</a>
+                        </li>
+                        <li>
+                              <a href="login.html">Login</a>
+                        </li>
+                        <div id="logo">
+                          <a href="index.html"><img src="img/logo.png" width="200" height="100"></a>
+                        </div>
+                  </ul>
+            </div>
+  </header>   
+<nav>
+        <div>
+              <div class="menu-btn">
+                    <ion-icon name="menu"></ion-icon>
+              </div>
+              <div class="menu">
+                    <div class="close-menu">
+                          <ion-icon name="menu"></ion-icon>
+                    </div>
+                    <div class="nav">
+                          <ul class="main-menu">
+                                <li class="main-menu-item">
+                                      <a href="#">About<ion-icon name="add"></ion-icon></a>
+                                      <ul class="submenu">
+                                            <li class="submenu-item">
+                                                  <a href="About.html#about">About</a>
+                                            </li>
+                                            <li class="submenu-item">
+                                                  <a href="About.html#map">Map</a>
+                                            </li>
+                                            <li class="submenu-item">
+                                                  <a href="About.html#attractions">Attractions</a>
+                                            </li>
+                                      </ul> 
+                                </li>
+                                <li class="main-menu-item">
+                                      <a href="#">Rooms<ion-icon name="add"></ion-icon></a>
+                                      <ul class="submenu">
+                                            <li class="submenu-item">
+                                                  <a href="Rooms.html#room1">Room1</a>
+                                            </li>
+                                            <li class="submenu-item">
+                                                  <a href="Rooms.html#room2">Room2</a>
+                                            </li>
+                                            <li class="submenu-item">
+                                                  <a href="Rooms.html#room3">Room3</a>
+                                            </li>
+                                            <li class="submenu-item">
+                                                  <a href="Rooms.html#room4">Room4</a>
+                                            </li>
+                                      </ul> 
+                                </li>
+                                <li class="main-menu-item">
+                                      <a href="#">Food&Drink<ion-icon name="add"></ion-icon></a>
+                                      <ul class="submenu">
+                                            <li class="submenu-item">
+                                                  <a href="FaD.html#restaurant">Restaurant</a>
+                                            </li>
+                                            <li class="submenu-item">
+                                                  <a href="FaD.html#bar">Bar</a>
+                                            </li>
+                                            <li class="submenu-item">
+                                                  <a href="FaD.html#cafe">Cafe</a>
+                                            </li>
+                                            <li class="submenu-item">
+                                                  <a href="FaD.html#roomservice">Room Service</a>
+                                            </li>
+                                      </ul> 
+                                </li>
+                                <li class="main-menu-item">
+                                      <a href="#">Facilities<ion-icon name="add"></ion-icon></a>
+                                      <ul class="submenu">
+                                            <li class="submenu-item">
+                                                  <a href="Facilities.html#gym">Gym</a>
+                                            </li>
+                                            <li class="submenu-item">
+                                                  <a href="Facilities.html#pool">Swimming Pool</a>
+                                            </li>
+                                            <li class="submenu-item">
+                                                  <a href="Facilities.html#cu">CU</a>
+                                            </li>
+                                            <li class="submenu-item">
+                                                  <a href="Facilities.html#laundry">Laundry Room</a>
+                                            </li>
+                                      </ul> 
+                                </li>
+                                <li class="main-menu-item">
+                                      <a href="#">Contact Us<ion-icon name="add"></ion-icon></a>
+                                      <ul class="submenu">
+                                            <li class="submenu-item">
+                                                  <a href="Contactus.html#contact">Contact us</a>
+                                            </li>
+                                            <li class="submenu-item">
+                                                  <a href="Contactus.html#recruit">Recruit</a>
+                                            </li>
+                                      </ul> 
+                                </li>
+                          </ul>
+                    </div>
+  
+                    <div class="contact">
+                          <p class="call"><ion-icon name="call"></ion-icon>&nbsp;&nbsp;&nbsp;+81 010 4910 3833</p>
+                          <p class="mail"><ion-icon name="mail"></ion-icon>&nbsp;&nbsp;&nbsp;junseak11051@gmail.com</p>
+                    </div>
+              </div>
+        </div>
+</nav>
+      <script src="js/sidemenu.js"></script>
+
+<div class ="wrap">
+  
+  <div id="slider">
+    <div class="slide">
+      <div class="slide-content">
+        <a name="home"></a>
+      <div id="home">
+                  <h1>Home</h1>
             </div>
       </div>
-      <script src="js/script.js"></script>
+    </div>
+  </div>
+</div>
+    
 </body>
 </html>

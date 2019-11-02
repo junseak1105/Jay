@@ -16,7 +16,28 @@
 
     <!--html call-->
 </head>
-<body>   
+<body>
+  <ion-icon name="arrow-dropright"id="arrow-right"></ion-icon>
+  <ion-icon name="arrow-dropleft" id="arrow-left"></ion-icon>
+<header>
+            <div class="upmenu">
+                  <ul>
+                        
+                        <li>
+                              <a href="sitemap.html">Sitemap</a>
+                        </li>
+                        <li>
+                              <a href="register.html">Register</a>
+                        </li>
+                        <li>
+                              <a href="login.html">Login</a>
+                        </li>
+                        <div id="logo">
+                          <a href="index.html"><img src="img/logo.png" width="200" height="100"></a>
+                        </div>
+                  </ul>
+            </div>
+  </header>   
 <nav>
         <div>
               <div class="menu-btn">
@@ -113,103 +134,46 @@
                     </div>
               </div>
         </div>
-        </nav>
-        <script type="text/javascript">
-            $('ul.main-menu li').click(function (e) {
-    
-                if ($().siblings('li').find('ul.submenu:visible').length) {
-                    $('ul.submenu').slideUp('normal');
-                }
-                $(this).find('ul.submenu').slideToggle('normal');
-            });
-    
-            var t1 = new TimelineMax({ paused: true });     /*전환 시간 설정*/
-    
-            t1.to(".menu", 0.2, {
-                opacity: 0.9
-            });
-    
-            t1.staggerFrom(".main-menu li a:not(.submenu li a)", 1, {         /*메인메뉴 활성화*/
-                opacity: 0,
-                y: 10,
-                ease: Power3.easeInOut
-            }, 0.1);
-    
-            t1.from(".submenu", 0.1, {                                        /*서브메뉴 활성화*/
-                autoAlpha: 0
-            });
-    
-            t1.from(".call", 0.1, {                                             /*전화번호 활성화*/
-                delay: -1,
-                opacity: 0,
-                y: 10,
-                ease: Power3.easeInOut
-            });
-    
-            t1.from(".mail", 0.1, {                                             /*이메일 활성화*/
-                delay: -1,
-                opacity: 0,
-                y: 10,
-                ease: Power3.easeInOut
-            });
-    
-            t1.reverse();
-    
-            $(document).on("click", ".menu-btn", function () {                  /*클릭시 t1 함수 활성화*/
-                t1.reversed(!t1.reversed());
-            });
-    
-            $(".close-menu").click(function () {                /*클릭시 t1 함수 역으로 활성화*/
-                t1.reversed(!t1.reversed());
-            });
-    
-    
-        </script>   
-  <header>
-            <div class="upmenu">
-                  <ul>
-                        <li>
-                              <a href="sitemap.html">Sitemap</a>
-                        </li>
-                        <li>
-                              <a href="register.html">Register</a>
-                        </li>
-                        <li>
-                              <a href="login.html">Login</a>
-                        </li>
-                  </ul>
-            </div>
-  </header>
-      <!-- 1st -->
-      <a name="gym"></a>
-      <div id="gym" class="section">
-            <div class="container">
-                  <h1>Gym</h1>
-            </div>
-      </div>
-      <!-- 2nd -->
+</nav>
+      <script src="js/sidemenu.js"></script>
 
-      <a name="pool"></a>
-      <div id="pool" class="section">
-            <div class="container">
-                  <h1>Swimming Pool</h1>
-            </div>
-      </div>
 
-      <!-- 3nd -->
-      <a name="cu"></a>
-      <div id="cu" class="section">
-            <div class="container">
-                  <h1>CU</h1>
-            </div>
+  
+  <div id="slider">
+    <div class="slide">
+      <div id="gym" class="slide-content-half">
+      <div class="leftimg">
+        <img src="img/about.jpg">
       </div>
-      <!-- 4th -->
-      <a name="laundry"></a>
-      <div id="laundry" class="section">
-            <div class="container">
-                  <h1>Laundry Room</h1>
-            </div>
+      <div class="righttext">gym</div>
       </div>
-      <script src="js/script.js"></script>
+    </div>
+    <div class="slide">
+      <div id="pool" class="slide-content-half">
+      <div class="leftimg">
+        <img src="img/about.jpg">
+      </div>
+      <div class="righttext">pool</div>
+      </div>
+    </div>
+    <div class="slide">
+      <div id="cu" class="slide-content-half">
+      <div class="leftimg">
+        <img src="img/about.jpg">
+      </div>
+      <div class="righttext">cu</div>
+      </div>
+    </div>
+    <div class="slide">
+      <div id="laundry" class="slide-content-half">
+      <div class="leftimg">
+        <img src="img/about.jpg">
+      </div>
+      <div class="righttext">laundry</div>
+      </div>
+    </div>
+  </div>
+
+<script src="js/slidescript.js"></script>
 </body>
 </html>
