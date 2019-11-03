@@ -1,4 +1,4 @@
- let sliderImages = document.querySelectorAll(".slide"),
+let sliderImages = document.querySelectorAll(".slide"),
   arrowleft = document.querySelector("#arrow-left"),
   arrowright = document.querySelector("#arrow-right"),
   current = 0;

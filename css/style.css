@@ -14,6 +14,10 @@ html,body {
   left:50%;
   transform:translateX(-100%);
 }
+#logo img{
+  width:200px;
+  height:100px;
+}
 
 .menu-btn {
     z-index:9999;
@@ -97,12 +101,32 @@ html,body {
 
 
 .container {
-      max-width: 1200px;
-      text-align: center;
-      margin: 0 auto;
-      padding: 0 3rem;
-      margin-top:34vh;
-      height:50vh;
+      display:block;
+      width:100%;
+      height:100vh;
+
+}
+.container img{
+  border:none;
+  top:20vh;
+  width:20%;
+  min-width: 500px;
+  height:500px;
+  overflow:hidden;
+  position:fixed; 
+  left:50%;
+  transform:translateX(-50%);
+}
+#map iframe{
+  border:none;
+  top:30vh;
+  width:50%;
+  min-width: 500px;
+  height:320px;
+  overflow:hidden;
+  position:fixed; 
+  left:50%;
+  transform:translateX(-50%);
 }
 /* fixed navigation */
 
@@ -111,7 +135,6 @@ html,body {
       height: 60px;
       width: 100%;
       display:block;
-      background-color: transparent;
       position: fixed;
       min-width:800px;
       
@@ -161,7 +184,7 @@ html,body {
       height:100vh;
       background: #282623;
       padding: 8rem 0;
-      overflow-y: hidden;
+
 }
 
 /* 2nd */
@@ -171,17 +194,7 @@ html,body {
       background: #282623;
       padding: 8rem 0;
 }
-#map iframe{
-  border:none;
-  top:30vh;
-  width:50%;
-  min-width: 500px;
-  height:320px;
-  overflow:hidden;
-  position:fixed; 
-  left:50%;
-  transform:translateX(-50%);
-}
+
 /* 3rd */
 
 #attractions {
@@ -315,12 +328,22 @@ html,body {
   width: 100%;
   height: 100vh;
   overflow:hidden;
+
   
+  
+}
+.slide-content >img{
+  display:block;
+  position:absolute;
+  top:0px;
+  width:100%;
+  height:100%;
 }
 #slider{
   border-color:green;
-}
+  overflow:hidden;
 
+}
 
 .slide-content {
   display: flex;
@@ -329,6 +352,13 @@ html,body {
   align-items: center;
   text-align: center;
   border-color:blue;
+}
+.slide{
+  animation:zoom 1s ease;
+}
+@keyframes zoom{
+  0%{transform:scale(2);opacity:0;}
+  100%{transform:scale(1);opacity:1;}
 }
 
 
@@ -400,8 +430,15 @@ html,body {
   color:white;
 }
 .popup{
+  display:block;
+  width:50%;
+  height:50vh;
   color:white;
   text-decoration: none;
+  position:fixed;
+  top:65%;
+  left:50%;
+  transform:translateX(-50%);
 }
 
 /*Half-Half page*/
