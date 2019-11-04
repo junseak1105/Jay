@@ -2,6 +2,7 @@ $('a[href*="#"]')
 .not('[href="#"]')
 .not('[href="#0"]')
       .click(function(event) {
+            $(".layer").hide();
             
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -12,12 +13,15 @@ $('a[href*="#"]')
                   }, 1000, function() {
                         var $target = $(target);
                         $target.focus();
+                        /*
                         if($target.is(":focus")) {
                               return false;
                         } else {
                               $target.attr('tabindex', '-1');
                               $target.focus();
+
                         };
+                        */
                   });
             
       }

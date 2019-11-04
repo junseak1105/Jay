@@ -1,0 +1,51 @@
+.upmenu {
+      z-index: 9999;
+      height: 60px;
+      width: 100%;
+      display:block;
+      position: fixed;
+      min-width:800px;
+      
+}
+
+.upmenu ul {
+      padding: 20px;
+      margin: 0;
+      margin-left:60px;
+}
+
+.upmenu li {
+      display: inline;
+      float: right;
+}
+
+.upmenu a {
+      display: inline-block;
+      width: 100px;
+      font-weight: 400;
+      text-align: center;
+      text-decoration: none;
+      padding: 20px 0;
+      color: white;
+      transition: 1s;
+}
+
+.upmenu a:hover {
+      color: #6C6C6C;
+}
+
+
+.upmenu a {
+      display: inline-block;
+      width: 100px;
+      font-weight: 400;
+      text-align: center;
+      text-decoration: none;
+      padding: 10px 0;
+      color: white;
+      transition: 1s;
+}
+
+.upmenu a:hover {
+      color: #6C6C6C;
+}
