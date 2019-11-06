@@ -1,8 +1,9 @@
+
 .popupimageslider{
-    overflow: hidden;
     height: 400px;
-    width: 90%;
+    width: 1800px;
     margin-left:5%;
+    overflow:hidden;
 }
 
 /*---------- SLIDE ANIMATION --------------*/
@@ -10,21 +11,19 @@
 @-webkit-keyframes slide_animation{
     0% {left:0px;}
     10% {left:0px;}
-    20% {left:1200px;}
-    30% {left:1200px;}
-    40% {left: 2400px;}
-    50% {left: 2400px;}
-    60% {left: 1200px;}
-    70% {left: 1200px;}
+    20% {left: 600px;}
+    30% {left: 600px;}
+    40% {left: 1200px;}
+    50% {left: 1200px;}
+    60% {left: 600px;}
+    70% {left: 600px;}
     80% {left: 0px;}
     90% {left: 0px;}
     100% {left:0px;}
 }
 
 .slide-images{
-    width: 3600px;
-    height: 800px;
-    margin: 0 0 0 -2400px;
+    margin: 0 0 0 -1200px;
     position: relative;
     -webkit-animation-name: slide_animation;
     -webkit-animation-duration: 20s;
@@ -32,10 +31,14 @@
     -webkit-animation-direction: alternate;
     -webkit-animation-play-state: running;
 }
+.slide-images img{
+    width:600px;
+    height:400px;
+}
 
 .img-container{
-    height: 500px;
-    width: 1200px;
+    height: 400px;
+    width: 600px;
     position: relative;
     float: left;
 }

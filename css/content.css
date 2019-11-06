@@ -21,6 +21,7 @@
 
 .container {
       z-index: 9999;
+      min-height: 500px;
       max-width: 1200px;
       text-align: center;
       margin: 0 auto;
@@ -29,10 +30,10 @@
 }
 .container .img1{
   border:none;
-  top:25vh;
-  width:20%;
+  top:30vh;
+  width:500px%;
   min-width: 500px;
-  height:600px;
+  height:500px;
   overflow:hidden;
   position:absolute;
   left:50%;
@@ -40,10 +41,10 @@
 }
 .container .img2{
   border:none;
-  top:125vh;
-  width:20%;
+  top:130vh;
+  width:500px;
   min-width: 500px;
-  height:600px;
+  height:500px;
   overflow:hidden;
   position:absolute;
   left:50%;
@@ -51,10 +52,10 @@
 }
 .container .img3{
   border:none;
-  top:225vh;
-  width:20%;
+  top:230vh;
+  width:500px;
   min-width: 500px;
-  height:600px;
+  height:500px;
   overflow:hidden;
   position:absolute;
   left:50%;
@@ -62,10 +63,10 @@
 }
 .container .img4{
   border:none;
-  top:325vh;
-  width:20%;
+  top:330vh;
+  width:500px;
   min-width: 500px;
-  height:600px;
+  height:500px;
   overflow:hidden;
   position:absolute;
   left:50%;

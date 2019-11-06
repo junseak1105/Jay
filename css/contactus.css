@@ -19,7 +19,13 @@
 .msg{
   width: 100%;
 }
- 
+.selectbox{
+  position:relative;
+  width:100%;
+  color:white;
+  height:32px;
+  background:black;
+}
 .input-fields .input,
 .msg textarea{
   margin: 10px 0;

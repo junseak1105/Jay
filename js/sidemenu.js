@@ -45,11 +45,13 @@ $('ul.main-menu li').click(function (e) {
             t1.reverse();
     
             $(document).on("click", ".menu-btn", function () {                  /*클릭시 t1 함수 활성화*/
+                $(".menu").show();
                 t1.reversed(!t1.reversed());
             });
     
             $(".close-menu").click(function () {                /*클릭시 t1 함수 역으로 활성화*/
                 t1.reversed(!t1.reversed());
+                $(".menu").hide();
             });
     
     

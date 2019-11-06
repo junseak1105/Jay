@@ -1,0 +1,39 @@
+/*{
+	border:1px solid;
+	display: block;
+}*/
+.sitemap .sitemapcontent {
+      z-index: 9999;
+      max-width: 1200px;
+      text-align: center;
+      margin: 0 auto;
+      padding: 0 3rem;
+      margin-top:15vh;
+}
+.sitemapcontent h1{
+	text-align:center;
+	color:white;
+}
+.sitemapcontent table{
+	border-collapse:collapse;
+}
+.sitemapcontent table td,th{
+	text-align:center;
+	padding:10px;
+	height:15px;
+	width:200px;
+	border-left:0.5px solid grey;
+}
+
+
+.sitemapcontent th{
+	border-top:1px solid white;
+	font-size:x-large;
+}
+.sitemapcontent table a{
+	text-decoration: none;
+	color:white;
+}
+.sitemapcontent table a:hover{
+	color:gray;
+}

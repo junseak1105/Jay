@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JHotel</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/arrows.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/sidemenu.css">
+    <link rel="stylesheet" href="css/upmenu.css">
+    <link rel="stylesheet" href="css/popupslide.css">
+    <link rel="stylesheet" href="css/contactus.css">
+    <link rel="stylesheet" href="css/sitemap.css">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <!--ionicon-->
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <!--sidemenubar-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+    <!--html call-->
+</head>
+<body>
+	<nav>
+        <div>
+              <div class="menu-btn">
+                    <ion-icon name="menu"></ion-icon>
+              </div>
+              <div class="menu">
+                    <div class="close-menu">
+                          <ion-icon name="menu"></ion-icon>
+                    </div>
+                    <div class="nav">
+                          <ul class="main-menu">
+                                <li class="main-menu-item">
+                                      <a href="#">About<ion-icon name="add"></ion-icon></a>
+                                      <ul class="submenu">
+                                            <li class="submenu-item">
+                                                  <a href="About.html#about">About</a>
+                                            </li>
+                                            <li class="submenu-item">
+                                                  <a href="About.html#map">Map</a>
+                                            </li>
+                                            <li class="submenu-item">
+                                                  <a href="About.html#attractions">Attractions</a>
+                                            </li>
+                                      </ul> 
+                                </li>
+                                <li class="main-menu-item">
+                                      <a href="#">Rooms<ion-icon name="add"></ion-icon></a>
+                                      <ul class="submenu">
+                                            <li class="submenu-item">
+                                                  <a href="Rooms.html#room1">Room1</a>
+                                            </li>
+                                            <li class="submenu-item">
+                                                  <a href="Rooms.html#room2">Room2</a>
+                                            </li>
+                                            <li class="submenu-item">
+                                                  <a href="Rooms.html#room3">Room3</a>
+                                            </li>
+                                            <li class="submenu-item">
+                                                  <a href="Rooms.html#room4">Room4</a>
+                                            </li>
+                                      </ul> 
+                                </li>
+                                <li class="main-menu-item">
+                                      <a href="#">Food&Drink<ion-icon name="add"></ion-icon></a>
+                                      <ul class="submenu">
+                                            <li class="submenu-item">
+                                                  <a href="FaD.html#restaurant">Restaurant</a>
+                                            </li>
+                                            <li class="submenu-item">
+                                                  <a href="FaD.html#bar">Bar</a>
+                                            </li>
+                                            <li class="submenu-item">
+                                                  <a href="FaD.html#cafe">Cafe</a>
+                                            </li>
+                                            <li class="submenu-item">
+                                                  <a href="FaD.html#roomservice">Room Service</a>
+                                            </li>
+                                      </ul> 
+                                </li>
+                                <li class="main-menu-item">
+                                      <a href="#">Facilities<ion-icon name="add"></ion-icon></a>
+                                      <ul class="submenu">
+                                            <li class="submenu-item">
+                                                  <a href="Facilities.html#gym">Gym</a>
+                                            </li>
+                                            <li class="submenu-item">
+                                                  <a href="Facilities.html#pool">Swimming Pool</a>
+                                            </li>
+                                            <li class="submenu-item">
+                                                  <a href="Facilities.html#cu">CU</a>
+                                            </li>
+                                            <li class="submenu-item">
+                                                  <a href="Facilities.html#laundry">Laundry Room</a>
+                                            </li>
+                                      </ul> 
+                                </li>
+                                <li class="main-menu-item">
+                                      <a href="#">Contact Us<ion-icon name="add"></ion-icon></a>
+                                      <ul class="submenu">
+                                            <li class="submenu-item">
+                                                  <a href="Contactus.html#contact">Contact us</a>
+                                            </li>
+                                            <li class="submenu-item">
+                                                  <a href="Contactus.html#recruit">Recruit</a>
+                                            </li>
+                                      </ul> 
+                                </li>
+                          </ul>
+                    </div>
+  
+                    <div class="contact">
+                          <p class="call"><ion-icon name="call"></ion-icon>&nbsp;&nbsp;&nbsp;+81 010 4910 3833</p>
+                          <p class="mail"><ion-icon name="mail"></ion-icon>&nbsp;&nbsp;&nbsp;junseak11051@gmail.com</p>
+                    </div>
+              </div>
+        </div>
+        </nav>
+        <script src="js/sidemenu.js"></script>   
+    <header>
+            <div class="upmenu">
+                  <ul>
+                        <li>
+                              <a href="sitemap.html">Sitemap</a>
+                        </li>
+                        <li>
+                              <a href="#" class="register-btn">Register</a>
+                              <div id="register1">
+                              <div class="register">
+                                <a href="#" class="close"><ion-icon name="close" id="close-icon"></ion-icon></a>
+                                <form name="register" method ="post">
+                              <div class="contact-form">
+                                <div class="input-fields">
+                                  <h3><ion-icon name="person-add"></ion-icon>Register</h3>
+                                  <input type="text" class="input" placeholder="First-name">
+                                  <input type="text" class="input" placeholder="Last-name">
+                                  <input type="text" class="input" placeholder="ID">
+                                  <input type="password" class="input" placeholder="PW">
+                                  <input type="email" class="input" placeholder="Email Address">
+                                  <input type="text" class="input" placeholder="Phone  : 00*-000*-0000" pattern="[0-9]{2,3} 2,3}--[0 9]{3,4} 3,4}--[0 9]{4}">
+                                </div>
+                              <div class="signin-btn">Sign In & move to Login</div>
+                            </div>
+                          </div>
+                        </form>
+                        </li>
+                        <li>
+                              <a href="#" class="login-btn">Login</a>
+                              <div id="login1">
+                              <div class="login">
+                                <a href="#" class="close"><ion-icon name="close" id="close-icon"></ion-icon></a>
+                                <form name="login" method ="post">
+                              <div class="contact-form">
+                                <div class="input-fields">
+                                  <h3><ion-icon name="key"></ion-icon>Login</h3>
+                                  <input type="text" class="input" placeholder="ID">
+                                  <input type="password" class="input" placeholder="PW">
+                                </div>
+                              <div class="btn">send</div>
+                            </div>
+                          </div>
+                        </form>
+                        </li>
+                        <li id="logo">
+                          <a href="index.html"><img src="img/logo.png" width="120" height="40"></a>
+                        </li>
+                  </ul>
+            </div>
+  </header>
+  <section>
+  	<a name="sitemap"></a>
+      <div class="sitemap">
+            <div class="sitemapcontent">
+                  <h1>Sitemap</h1>
+                  <br>
+                  <table>
+                  	<tr>
+                  		<th style="border:none;border-top:1px solid white"><a href="About.html#about">About</a></th>
+                  		<th><a href="Rooms.html#room1">Rooms</a></th>
+                  		<th><a href="FaD.html#restaurant">Food&Drink</a></th>
+                  		<th><a href="Facilities.html#gym">Facilities</a></th>
+                  		<th><a href="Contactus.html#contact">Contact Us</a></th>
+                  	</tr>
+                  	<tr>
+                  		<td style="border:none"><a href="About.html#about">About</a></td>
+                  		<td><a href="Rooms.html#room1">Room1</a></td>
+                  		<td><a href="FaD.html#restaurant">Restaurant</a></td>
+                  		<td><a href="Facilities.html#gym">Gym</a></td>
+                  		<td><a href="Contactus.html#contact">Contact us</a></td>
+                  	</tr>
+                  	<tr>
+                  		<td style="border:none"><a href="About.html#map">Map</a></td>
+                  		<td><a href="Rooms.html#room2">Room2</a></td>
+                  		<td><a href="FaD.html#bar">Bar</a></td>
+                  		<td><a href="Facilities.html#pool">Swimming Pool</a></td>
+                  		<td><a href="Contactus.html#recruit">Recruit</a></td>
+                  	</tr>
+                  	<tr>
+                  		<td style="border:none"> <a href="About.html#attractions">Attractions</a></td>
+                  		<td><a href="Rooms.html#room3">Room3</a></td>
+                  		<td><a href="FaD.html#cafe">Cafe</a></td>
+                  		<td><a href="Facilities.html#cu">CU</a></td>
+                  		<td></td>
+                  	</tr>
+                  	<tr>
+                  		<td style="border:none"></td>
+                  		<td><a href="Rooms.html#room4">Room4</a></td>
+                  		<td><a href="FaD.html#roomservice">Room Service</a></td>
+                  		<td><a href="Facilities.html#laundry">Laundry Room</a></td>
+                  		<td></td>
+                  	</tr>
+                  </table>
+            </div>
+      </div>
+      </section>
+  <script src="js/script.js"></script>
+  <script src="js/popup.js"></script>
+</body>
+</html>

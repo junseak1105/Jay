@@ -2,16 +2,10 @@
 <html>
 <head>
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-  <meta charset="euc-kr">
-  <title>구글맵 API 활용하기</title>
+  <meta charset="utf-8">
   <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
   <script>
     function initialize() {
-
-      /*
-        http://openapi.map.naver.com/api/geocode.php?key=f32441ebcd3cc9de474f8081df1e54e3&encoding=euc-kr&coord=LatLng&query=서울특별시 강남구 강남대로 456
-                위와같이 링크에서 뒤에 주소를 적으면 x,y 값을 구할수 있습니다.
-      */
       var Y_point     = 37.575636;    // Y 좌표
       var X_point     = 126.977092;   // X 좌표
 
@@ -23,7 +17,7 @@
       // 말풍선 내용
       var contentString = '<div>' +
       "<h2>Jay's Hotel</h2>"+
-      '<p>Jay Hotel is the best hotel in Seoul/p>' +
+      '<p>Jay Hotel is the best hotel in Seoul</p>' +
       //'<a href="http://www.daegu.go.kr" target="_blank">http://www.daegu.go.kr</a>'+ //링크도 넣을 수 있음
       '</div>';
 
