@@ -1,3 +1,4 @@
+//scroll slider
 $('a[href*="#"]')
 .not('[href="#"]')
 .not('[href="#0"]')
@@ -13,15 +14,6 @@ $('a[href*="#"]')
                   }, 1000, function() {
                         var $target = $(target);
                         $target.focus();
-                        /*
-                        if($target.is(":focus")) {
-                              return false;
-                        } else {
-                              $target.attr('tabindex', '-1');
-                              $target.focus();
-
-                        };
-                        */
                   });
             
       }

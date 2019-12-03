@@ -1,13 +1,27 @@
-function checkForm(){
-	var userId= document.getElementById('#idinput');
-	var userPw = document.getElementById('#pwinput');
+ function Login()
+   {
+           var form = document.form1;
 
-	if(loginfield.idinput.value =="june1105" && loginfield.pwinput.value = 'june1105' ){
-		return true;
-	}
-	else
-		widow.alert("Login failed!");
-		loginfield.pwinput.focus();
-		loginfield.idinput.focus();
-		return false;
-	}
+                  //아이디에서 입력 필수 조건문
+                  if (form.txtID.value == "")
+                  {
+                          alert("Insert ID!");
+                          return;
+                  }
+                  if (form.txtPwd.value == "")
+                  {
+                          alert("Insert PW!");
+                          return;
+                  }
+                  if (form.txtID.value == "june1105" && form.txtPwd.value =="june1105")
+                  {
+                          $(".login").fadeOut();
+                          $(".layer").fadeOut();
+                          $(".login-btn").hide();
+                          $(".logout-btn").show();
+                          return;
+                  }
+                  else{
+                          alert("Check ID or PW");
+                  }
+   }

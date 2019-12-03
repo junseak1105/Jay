@@ -1,5 +1,5 @@
 .upmenu {
-      z-index: 9999;
+      z-index: 999999;
       height: 60px;
       width: 100%;
       display:block;
@@ -9,39 +9,26 @@
 }
 
 .upmenu ul {
+      z-index: 999999;
       padding: 20px;
       margin: 0;
       margin-left:60px;
 }
 
 .upmenu li {
+      z-index: 999999;
       display: inline;
       float: right;
 }
 
 .upmenu a {
+      z-index: 999999;
       display: inline-block;
       width: 100px;
       font-weight: 400;
       text-align: center;
       text-decoration: none;
       padding: 20px 0;
-      color: white;
-      transition: 1s;
-}
-
-.upmenu a:hover {
-      color: #6C6C6C;
-}
-
-
-.upmenu a {
-      display: inline-block;
-      width: 100px;
-      font-weight: 400;
-      text-align: center;
-      text-decoration: none;
-      padding: 10px 0;
       color: white;
       transition: 1s;
 }

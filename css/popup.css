@@ -6,7 +6,7 @@
 
 .layer {
   display:none;
-  z-index:99999;
+  z-index:99999999999999;
   position:fixed; 
   overflow-y:scroll;
   left:50%;
@@ -80,8 +80,9 @@ iframe{
   box-shadow:3px 3px 10px rgba(0,0,0,0,4);
   background:black;
   color:white;
-  height:22%;
-  opacity: 0.95;
+  height:300px;
+  opacity: 0.8;
+  border-radius:5px;
 }
 .register {
   display:none;
@@ -96,8 +97,9 @@ iframe{
   box-shadow:3px 3px 10px rgba(0,0,0,0,4);
   background:black;
   color:white;
-  height:39%;
-  opacity: 0.95;
+  height:500px;
+  opacity: 0.8;
+  border-radius:5px;
 }
 .login .close{
   display:block;

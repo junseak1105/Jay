@@ -126,7 +126,7 @@
         </div>
         </nav>
         <script src="js/sidemenu.js"></script>   
-    <header>
+  <header>
             <div class="upmenu">
                   <ul>
                         <li>
@@ -148,24 +148,26 @@
                                   <input type="email" class="input" placeholder="Email Address">
                                   <input type="text" class="input" placeholder="Phone  : 00*-000*-0000" pattern="[0-9]{2,3} 2,3}--[0 9]{3,4} 3,4}--[0 9]{4}">
                                 </div>
-                              <div class="signin-btn">Sign In & move to Login</div>
+                              <input type="submit" class="signin-btn" value="Sign In & move to Login">
                             </div>
                           </div>
                         </form>
                         </li>
                         <li>
                               <a href="#" class="login-btn">Login</a>
+                              <a href="Contactus.html" class="logout-btn">Logout</a>
                               <div id="login1">
                               <div class="login">
                                 <a href="#" class="close"><ion-icon name="close" id="close-icon"></ion-icon></a>
-                                <form name="login" method ="post">
+                                <form name="form1" method ="post">
                               <div class="contact-form">
                                 <div class="input-fields">
                                   <h3><ion-icon name="key"></ion-icon>Login</h3>
-                                  <input type="text" class="input" placeholder="ID">
-                                  <input type="password" class="input" placeholder="PW">
+                                  <input type="text" class="input" id="idinput" name="txtID" placeholder="ID" value="">
+                                  <input type="password" class="input" id="pwinput"name="txtPwd" placeholder="PW"value="">
                                 </div>
-                              <div class="btn">send</div>
+                              <input type="button" class="login-send-btn" value=
+                              "send" onclick="Login();"/>
                             </div>
                           </div>
                         </form>
@@ -238,6 +240,7 @@
           </div>
         </div>
       </div>
+      <script src="js/login.js"></script>
       <script src="js/script.js"></script>
       <script src="js/popup.js"></script>
       <script src="js/loader.js"></script>

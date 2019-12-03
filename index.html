@@ -15,16 +15,19 @@
     <link rel="stylesheet" href="css/popupslide.css">
     <link rel="stylesheet" href="css/contactus.css">
     <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/indexform.css">
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <!--ionicon-->
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
     <!--sidemenubar-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-
     <!--html call-->
 </head>
 <body>
+    
+
+
 <div class="loader">
     <img src="img/loading.gif" alt="Loading..." />
 </div>      
@@ -148,24 +151,26 @@
                                   <input type="email" class="input" placeholder="Email Address">
                                   <input type="text" class="input" placeholder="Phone  : 00*-000*-0000" pattern="[0-9]{2,3} 2,3}--[0 9]{3,4} 3,4}--[0 9]{4}">
                                 </div>
-                              <div class="signin-btn">Sign In & move to Login</div>
+                              <input type="submit" class="signin-btn" value="Sign In & move to Login">
                             </div>
                           </div>
                         </form>
                         </li>
                         <li>
                               <a href="#" class="login-btn">Login</a>
+                              <a href="index.html" class="logout-btn">Logout</a>
                               <div id="login1">
                               <div class="login">
                                 <a href="#" class="close"><ion-icon name="close" id="close-icon"></ion-icon></a>
-                                <form name="login" method ="post">
+                                <form name="form1" method ="post">
                               <div class="contact-form">
                                 <div class="input-fields">
                                   <h3><ion-icon name="key"></ion-icon>Login</h3>
-                                  <input type="text" class="input" placeholder="ID">
-                                  <input type="password" class="input" placeholder="PW">
+                                  <input type="text" class="input" id="idinput" name="txtID" placeholder="ID" value="">
+                                  <input type="password" class="input" id="pwinput"name="txtPwd" placeholder="PW"value="">
                                 </div>
-                              <div class="btn">send</div>
+                              <input type="button" class="login-send-btn" value=
+                              "send" onclick="Login();"/>
                             </div>
                           </div>
                         </form>
@@ -181,12 +186,52 @@
         <img src="img/main.jpg">
       <div class="home">
             <div class="container">
-                  <p>contan1</p>
             </div>
       </div>
     </div>
+    <form id="mainform"action="" method="post">
+      <table>
+        <tr>
+          <th>Check In</th>
+          <th>Check Out</th>
+          <th>Adults</th>
+          <th>Kids</th>
+        <tr>
+          <td>
+      <input type="date" id="Check_in" name="Check_in" placeholder="Check in">
+    </td>
+    <td>
+      <input type="date" id="Check_out"name="Check_out" placeholder="Check out">
+      </td>
+      <td>
+      <select id="Adult"name="Adult">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+    </td>
+    <td>
+      <select id="Kids"name="Kids">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+    </td>
+    <td>
+
+        <div id="indexforminput">
+          <input type="submit" value="Search" onclick="alert('No rooms availiable for now')";>
+        </div>
+      </td>
+    </form>
+    <script src="js/login.js"></script>
       <script src="js/script.js"></script>
       <script src="js/popup.js"></script>
       <script src="js/loader.js"></script>
+      <script src="js/indexform.js"></script>
+      <script src="js/login.js"></script>
+
 </body>
 </html>

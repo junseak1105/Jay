@@ -26,9 +26,18 @@
     <!--html call-->
 </head>
 <body>
-<div class="loader">
+<script src="js/script.js"></script>
+<script src="js/popup.js"></script>
+<script src="js/login.js"></script>
+<script src="js/googlemap.js"></script>
+<script src="js/loader.js"></script>
+<script src="js/sidemenu.js"></script>  
+<!--loader-->
+<div class="loader">                                    
     <img src="img/loading.gif" alt="Loading..." />
-</div>   
+</div>
+<!--loader-->
+<!-- Menu button-->   
 <nav>
         <div>
               <div class="menu-btn">
@@ -125,9 +134,10 @@
                     </div>
               </div>
         </div>
-        </nav>
-        <script src="js/sidemenu.js"></script>   
-    <header>
+        </nav> 
+<!-- Menu button--> 
+<!-- Header Menu--> 
+  <header>
             <div class="upmenu">
                   <ul>
                         <li>
@@ -149,24 +159,26 @@
                                   <input type="email" class="input" placeholder="Email Address">
                                   <input type="text" class="input" placeholder="Phone  : 00*-000*-0000" pattern="[0-9]{2,3} 2,3}--[0 9]{3,4} 3,4}--[0 9]{4}">
                                 </div>
-                              <div class="signin-btn">Sign In & move to Login</div>
+                              <input type="submit" class="signin-btn" value="Sign In & move to Login">
                             </div>
                           </div>
                         </form>
                         </li>
                         <li>
                               <a href="#" class="login-btn">Login</a>
+                              <a href="About.html" class="logout-btn">Logout</a>
                               <div id="login1">
                               <div class="login">
                                 <a href="#" class="close"><ion-icon name="close" id="close-icon"></ion-icon></a>
-                                <form name="login" method ="post">
+                                <form name="form1" method ="post">
                               <div class="contact-form">
                                 <div class="input-fields">
                                   <h3><ion-icon name="key"></ion-icon>Login</h3>
-                                  <input type="text" name="idinput" id="idinput" class="input" placeholder="ID">
-                                  <input type="password"name="pwinput" id="nameinput" class="input" placeholder="PW">
+                                  <input type="text" class="input" id="idinput" name="txtID" placeholder="ID" value="">
+                                  <input type="password" class="input" id="pwinput"name="txtPwd" placeholder="PW"value="">
                                 </div>
-                              <div class="btn">send</div>
+                              <input type="button" class="login-send-btn" value=
+                              "send" onclick="Login();"/>
                             </div>
                           </div>
                         </form>
@@ -177,6 +189,8 @@
                   </ul>
             </div>
   </header>
+<!-- Header Menu--> 
+<!-- Main content-->
       <!-- 1st -->
       <a name="about"></a>
       <div class="slide-content"> 
@@ -190,13 +204,13 @@
                   <div class="popupimageslider">
                     <div class="slide-images">
                       <div class="img-container">
-                        <img src="img/image 1.jpg">
+                        <img src="img/about/about3.jpg">
                       </div>
                       <div class="img-container">
-                        <img src="img/image 2.jpg">
+                        <img src="img/about/about2.jpg">
                       </div>
                       <div class="img-container">
-                        <img src="img/image 3.jpg">
+                        <img src="img/about/about1.jpg">
                       </div>
                     </div>
                   </div>
@@ -244,13 +258,13 @@
                   <div class="popupimageslider">
                     <div class="slide-images">
                       <div class="img-container">
-                        <img src="img/image 1.jpg">
+                        <img src="img/about/attractions1.jpg">
                       </div>
                       <div class="img-container">
-                        <img src="img/image 2.jpg">
+                        <img src="img/about/attractions2.jpg">
                       </div>
                       <div class="img-container">
-                        <img src="img/image 3.jpg">
+                        <img src="img/about/attractions_main.jpg">
                       </div>
                     </div>
                   </div>
@@ -263,11 +277,7 @@
           </div>
         </div>
       </div>
-      <script src="js/script.js"></script>
-      <script src="js/popup.js"></script>
-      <script src="js/login.js"></script>
-      <script src="js/googlemap.js"></script>
-      <script src="js/loader.js"></script>
+<!-- Main content-->     
 </body>
 </html>
 

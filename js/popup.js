@@ -4,8 +4,8 @@
 	$(".layer").slideDown();
 	$(".layer").fadeOut();
 	*/
-
-
+$(".logout-btn").hide()
+//layer popup
 $(".close").click(function(e){
 	e.preventDefault();
 	$(".layer").fadeOut();
@@ -144,11 +144,18 @@ $(".close").click(function(e){
 	$(".register").fadeOut();
 	$(".layer").fadeOut();
 });
+$(".menu-btn").click(function(e){
+	e.preventDefault();
+	$(".login").fadeOut();
+	$(".register").fadeOut();
+	$(".layer").fadeOut();
+});
 $(".btn").click(function(e){
 	e.preventDefault();
 	$(".login").fadeOut();
 	$(".layer").fadeOut();
 });
+
 $(".register-btn").click(function(e){
 	e.preventDefault();
 	$(".login").fadeOut();
@@ -159,6 +166,7 @@ $(".register-btn").click(function(e){
 
 $(".signin-btn").click(function(e){
 	e.preventDefault();
+	alert("No registration availiable!");
 	$(".register").fadeOut();
 	$("#login1").find(".login").fadeIn();
 });

@@ -1,0 +1,45 @@
+/*{
+	border:1px solid;
+	display:block;
+}*/
+#mainform{
+	z-index: 99999;
+	display:block;
+	width:550px;
+	height:200px;
+	opacity:0.7;
+	position:absolute;
+	top:15vh;
+	left:40%;
+	transform:translateX(-50%);
+	margin:50px;
+	text-align:center;
+}
+
+#indexform{
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+}
+}
+#mainform label{
+	color:white;
+	font-size:x-large;
+	opacity:1;
+}
+#mainform th{
+	color:white;
+}
+#mainform input{
+	display:block;
+	float:left;
+	margin: 10px 0;
+  background: white;
+  border: 1px solid white;
+  border-bottom: 2px solid #c5ecfd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  padding: 10px;
+  width: 200px;
+}
+
