@@ -170,3 +170,13 @@ $(".signin-btn").click(function(e){
 	$(".register").fadeOut();
 	$("#login1").find(".login").fadeIn();
 });
+$("#recruit-btn").click(function(e){
+	e.preventDefault();
+	alert("Message Sent!");
+	$(".layer").fadeOut();
+});
+$("#contact-btn").click(function(e){
+	e.preventDefault();
+	alert("Message Sent!");
+	$(".layer").fadeOut();
+});
